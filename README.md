@@ -6,8 +6,6 @@ The goal of the project is to provide a simple, fast, and fully client-side vers
 
 Players enter their names, start a game, and play. Nothing is stored, nothing persists.
 
----
-
 ## How the game works
 
 At the start of each round:
@@ -17,8 +15,6 @@ At the start of each round:
 
 Through turn-based questions and answers, players try to identify the spy, while the spy attempts to guess the location without being discovered.
 
----
-
 ## Design choices
 
 - Fully client-side logic
@@ -26,8 +22,6 @@ Through turn-based questions and answers, players try to identify the spy, while
 - Game state exists only in memory
 - Locations are never repeated within the same game
 - Flexible rules that allow meme-oriented variations
-
----
 
 ## Features
 
@@ -37,15 +31,11 @@ Through turn-based questions and answers, players try to identify the spy, while
 - Optional meme rules (e.g. specific player names triggering special behavior)
 - Mobile-friendly by design
 
----
-
 ## Tech stack
 
 - Astro
 - TypeScript
 - Tailwind CSS
-
----
 
 ## Disclaimer
 

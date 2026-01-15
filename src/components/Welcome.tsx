@@ -77,7 +77,10 @@ export default function WelcomeGame() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white p-4">
       <div className="w-full max-w-lg bg-gray-800 p-6 rounded-2xl shadow-xl">
-        <h1 className="text-2xl font-bold text-center mb-4">Spyfall Homemade</h1>
+        
+        <div className="flex justify-center mb-6">
+          <img src="/spyfallout.png" alt="Spyfallout Logo" className="w-20 h-20" />
+        </div>
 
         {!gameStarted ? (
           <form onSubmit={handleStartGame} className="space-y-4">
