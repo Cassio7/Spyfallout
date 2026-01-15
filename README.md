@@ -1,46 +1,53 @@
-# Astro Starter Kit: Basics
+# Spyfall – Homemade Edition
 
-```sh
-npm create astro@latest -- --template basics
-```
+This is a Spyfall-inspired party game rebuilt from scratch using Astro and TypeScript.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The goal of the project is to provide a simple, fast, and fully client-side version of the game that can be played immediately without accounts, servers, or databases.
 
-## 🚀 Project Structure
+Players enter their names, start a game, and play. Nothing is stored, nothing persists.
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## How the game works
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+At the start of each round:
 
-## 🧞 Commands
+- All players receive the same secret location and a unique role
+- One or more players are spies and do not know the location
 
-All commands are run from the root of the project, from a terminal:
+Through turn-based questions and answers, players try to identify the spy, while the spy attempts to guess the location without being discovered.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+---
 
-## 👀 Want to learn more?
+## Design choices
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Fully client-side logic
+- No backend, no database, no sessions
+- Game state exists only in memory
+- Locations are never repeated within the same game
+- Flexible rules that allow meme-oriented variations
+
+---
+
+## Features
+
+- Fast game setup
+- Multiple locations with role-based gameplay
+- Support for custom and unconventional locations
+- Optional meme rules (e.g. specific player names triggering special behavior)
+- Mobile-friendly by design
+
+---
+
+## Tech stack
+
+- Astro
+- TypeScript
+- Tailwind CSS
+
+---
+
+## Disclaimer
+
+This project is not affiliated with the original Spyfall game.
+It is intended for personal use, experimentation, and entertainment only.
