@@ -77,9 +77,8 @@ export default function WelcomeGame() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white p-4">
       <div className="w-full max-w-lg bg-gray-800 p-6 rounded-2xl shadow-xl">
-        
         <div className="flex justify-center mb-6">
-          <img src="/spyfallout.png" alt="Spyfallout Logo" className="w-20 h-20" />
+          <img src="/spyfallout.png" alt="Spyfallout Logo" className="w-60 h-60" />
         </div>
 
         {!gameStarted ? (
