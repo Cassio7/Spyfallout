@@ -4,9 +4,14 @@ export type Player = {
   isSpy?: boolean;
 };
 
+export type Job = {
+  name:string;
+  isRepeatable: boolean;
+}
+
 export type Location = {
   name: string;
-  jobs: string[];
+  jobs: Job[];
 };
 
 export type GameState = {
